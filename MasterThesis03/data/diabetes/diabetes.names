@@ -1,0 +1,9 @@
+pregnant: continuous
+Plasma: continuous
+pressure: continuous
+thickness: continuous
+insulin: continuous
+Body: continuous
+Diabetes: continuous
+Age: continuous
+class: 0,1
