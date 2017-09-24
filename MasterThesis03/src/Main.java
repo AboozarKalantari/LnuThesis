@@ -10,7 +10,7 @@ import util.*;
 import metadata.*;
 
 public class Main {
-	final static String PATH="DataSet1";
+	final static String PATH="Data";
 
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws IOException {
@@ -32,12 +32,12 @@ public class Main {
 
 			System.out.println("Please Enter a K for Number of Neighbors: ");
 			System.out.println("**for PERCENT use % with desired number(e.g. 5%)**");
-			String str = scan.nextLine();
+			String str = scan.next();
 
 			System.out.println("Please Enter a Number for distance: \n0= Euclidan\\overlaping \n"
 					+ "1= Euclidan\\probability \n2= Manhatan\\overlaping \n3= Manhatan\\Probability");
 			int d = scan.nextInt();
-			File file = new File("out/"+str+"-"+d+"result.xls");
+			File file = new File("out/knn"+str+"-"+d+"result.xls");
 			// Create an output stream to the file.
 			file_output = new FileOutputStream (file);
 			// Wrap the FileOutputStream with a DataOutputStream
